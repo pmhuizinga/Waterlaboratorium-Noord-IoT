@@ -1,0 +1,24 @@
+Kennisnetwerk WLN
+
+Data Exploration:
+File: Kennisnetwerk_procesdata_kwaliteitsdata_WLN.xlsx
+
+  Sheet: redox AT
+  Nogal ongestructureerd en tevens onduidelijke inhoud. Om deze reden uit de analyse verwijderd
+
+  Sheet: Influent lab analyses
+  Kolom: no2 (mg N/l)
+  Bevat niet numerieke waarden (bijv : "<0.2" en "'<0.125"). In beide gevallen omgezet naar 0.. Checken bij Masha!
+
+  Zie statistieken: er zijn meerdere velden die niet numeriek zijn...
+  
+Ideeen:
+Doelstelling is om de stijging van SVI te verklaren dus moeten we deze situatie kunnen herkennen. 
+Dus: SVI classificeren
+  stijging = onacceptabel = 1 (betreft in dit geval wel een cumulatieve stijging van x over periode y)
+  daling en stabiel is acceptabel = 0
+
+Sheet online data bevat metingen per uur. Is dit noodzakelijk voor de analyse? Aangezien de SVI grafiek op dagbasis is wordt aangenomen van niet.
+Om deze reden wordt het daggemiddelde van de sheet genomen.
+
+
